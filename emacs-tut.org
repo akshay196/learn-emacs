@@ -1,12 +1,12 @@
-# Org file which contains basic shortcuts for Emacs
-# Maintained by Akshay Gaikwad
+# Cheat sheet for Emacs user in .org
+# Maintain by Akshay Gaikwad
 
 * Keys on keyboard/ Emacs keys
-  C : Control
-  M : Meta or Alt
-  SPC : Spacebar
-  Del : Backspace
-  Ret : Enter
+C : Control
+M : Meta or Alt
+SPC : Spacebar
+Del : Backspace
+Ret : Enter
 
 
 * Navigation in emacs
@@ -23,16 +23,16 @@
    C-n : New line
    C-p : Previous line
    M-g g : Go to specific line
+   C-a : begining of line
+   C-e : End of line
+   M-a : begining of para
+   M-e : End of para
+
 
 ** letter/word
    C-f : Move forward by one char
    C-b : Move backward by one char
    M-b : Move backward by a word
-
-   C-a : begining of line
-   C-e : End of line
-   M-a : begining of sentence
-   M-e : End of sentence
 
 
 * Text selection, Cut, Copy, Paste
@@ -142,6 +142,3 @@
   M-x recover-file <RET>                : To recover crashed file
   M-x auto-fill	 		      :
   C-x f (number) <RET>  : To set margin (default is 70)
-
-* Question
-  Get new line without breaking current line (C-e Ret) in one stroke
