@@ -1,0 +1,105 @@
+#+SEQ_TODO: NEXT(n) TODO(t/!) WAITING(w@/!) SOMEDAY(s) ALWAYS(a) | DONE(d) CANCELLED(c)
+#+TAGS:  COMPUTER(c) PHONE(p) URGENT(u) FAMILY(f) STUDY(s) 
+#+ARCHIVE: archive.org::
+
+* Org mode functions 
+** ALWAYS Basics 
+   - Collapse all: S+Tab
+   - Load : C+c C+C
+
+** DONE todo function
+   - Shift+right/left : Switch TODO and DONE
+   - C+c C+t to open SEQ_TODO
+
+** DONE schedule and Agenda 
+   SCHEDULED: <2017-11-05 Sun>
+   - Schedule : C+c C+s 
+   - Deadline : C+c C+d
+   - Agenda : C+c a a (global-swt-key "C-ca"'org-agenda) or M-x org-agenda
+	 + [Erro]Not showing agenda > add into org-agenda-files (setq org-agenda-files '("path""another path"))
+   - Follow mode : S+f
+   - Nexe/Previous week : f or b
+
+** NEXT Reapeating Task
+   SCHEDULED: <2017-11-15 Wed .+1w>
+   :PROPERTIES:
+   :LAST_REPEAT: [2017-11-08 Wed 18:57]
+   :END:
+   
+   - State "DONE"       from "NEXT"       [2017-11-08 Wed 18:57]
+   - State "DONE"       from "TODO"       [2017-11-05 Sun 13:32]
+   * +1w : next occurance in week(d=day, m=month, y=year)
+   * ++1w : next occurance on same day of week[!]
+   * .+4w : next occurance 4 week after task is marked is done(Use C-c C-t to mark)
+	 
+** DONE Checklists
+   SCHEDULED: <2017-11-05 Sun>
+   - Add new checklist item : M+S+<RET>
+   - Toggle checkboxes : C-c C-c 
+   - Competion : [/] and [%] (C-c C-c to load) 
+** DONE Tag                                               :ExtraTag:COMPUTER:s
+   SCHEDULED: <2017-11-05 Sun>
+   - #+TAGS: name(n)
+   - C-c C-q : Add tags and free tag by pressing <tab> after
+** DONE Ajenda View Advance
+   DEADLINE: <2017-11-06 Mon> SCHEDULED: <2017-11-06 Mon 12:00>
+   - a : agenda for week or day
+   - L : Timeline
+   - t : list of all TODO
+   - T : only TODO list
+   - m : MAtch tag, properties, TODO keyword
+   - s : Serach kwd
+** DONE Customize TODO
+   - C-c a C: To cusomize Agenda as you want
+** DONE Drawer, Logging, Quick Note
+   :LOGBOOK:
+   - Note taken on [2017-11-08 Wed 19:46] \\
+	 Paper2 was some what hard :(
+   - Note taken on [2017-11-08 Wed 19:46] \\
+	 Exam paper1 was good
+   :END:
+   - [X] Exam Paper1
+   - [X] Exam Paper2
+   - Drawer : Written in :DRAWERNAME: content :END:
+   - Reserverd--> :LOGBOOK: 
+   - Customize org-log-into-drawer (Option/Customize Emacs/Specific option)
+   - Take note: C-c C-z     Save: C-c C-c
+** DONE Archive 
+   CLOSED: [2017-11-13 Mon 22:14]
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2017-11-13 Mon 22:14]
+   :END:
+   - Add #+ARCHIVE: filename.org::
+   - Archive entry : C-c C-x C-a
+   - Archive subtree: C-c C-x C-s
+   - Archive under hesdline and see what to archive: C-u C-c C-x C-s 
+
+** WAITING Automatic logging
+   :LOGBOOK:
+   - State "WAITING"    from "TODO"       [2017-11-13 Mon 22:05] \\
+	 Need some time so waiting
+   :END:
+   - #+SEQ_TODO: TODO(t@/!)
+	 - t --> hotkey for TODO
+	 - @ --> log timestamp and note when entered
+	 - ! --> log timestamp when leave
+   - Log CLOSED timestamp when DOME
+	 - customize variable org-log-done
+   - Log note when resheduling
+	 - custome variable org-log-reshedule
+
+** DONE Reschedule demo
+   CLOSED: [2017-11-13 Mon 22:18] SCHEDULED: <2017-11-15 Wed>
+   :LOGBOOK:
+   - Rescheduled from "[2017-11-01 Wed]" on [2017-11-13 Mon 22:17] \\
+	 Rescheduled note
+   :END:
+
+* 2017
+  * 2017-11 Nov
+	* 2017-11-05 Sunday [1/2]
+	  - [X] test
+	  - [ ] new
+	* 2017-11-06 Monday [0%]
+	  - [ ] PPT External Exam
+	  

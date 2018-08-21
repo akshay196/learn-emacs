@@ -1,0 +1,147 @@
+# Org file which contains basic shortcuts for Emacs
+# Maintained by Akshay Gaikwad
+
+* Keys on keyboard/ Emacs keys
+  C : Control
+  M : Meta or Alt
+  SPC : Spacebar
+  Del : Backspace
+  Ret : Enter
+
+
+* Navigation in emacs
+** Document
+   M-< : To top of the document
+   M-> : To go to bottom of the documents
+
+** Page
+   C-v : Next page
+   M-v : Previous page
+   C-l : Move curser text at middle then top then bottom(for more C-l)
+
+** Line
+   C-n : New line
+   C-p : Previous line
+   M-g g : Go to specific line
+
+** letter/word
+   C-f : Move forward by one char
+   C-b : Move backward by one char
+   M-b : Move backward by a word
+
+   C-a : begining of line
+   C-e : End of line
+   M-a : begining of sentence
+   M-e : End of sentence
+
+
+* Text selection, Cut, Copy, Paste
+  C-SPC (Mini: Mark set) move cursor to select text
+  C-w : cut selected text
+  M-w : Copy selected text
+  M-h : Select entire para where cursor lies
+  C-y : Paste/yank
+  C-y M-y : To yank previous killed text
+
+  DEL : delete a back char
+  C-d : delete a next char
+
+  M-DEL : Delete a before word
+  M-d : Delete next word
+
+  C-k : Kill form curser to end of line (Kill means cut here)
+  M-k : Kill to current sentence
+  c-u 2 C-k : Kills two lines
+  C-o : New line
+
+
+* Paragraph formating
+  M-q : Reformat paragraph (80 word wrap)
+  M-^ : To join current line to the previous line
+  M-c Capitalise word
+  M-u Uppercase word
+  M-l Lower case word
+
+
+* Transpose
+  C-t Traspose char (change teh to the)
+  M-t Transpose word
+  C-x C-t Transpose line
+
+
+* Buffer List
+  d => Mark buffer to delete
+  u => Unmark buffer
+  C-x o : Open file with cursor on other frame
+
+
+* Undo
+  C-/ : Undo (Alternative: C-x u)
+
+
+* File operation
+  C-x C-f : Find a file(to open file)
+  C-x C-s : Save file
+
+
+* Buffer
+  C-x C-b : To list all open files(in buffer)
+  C-x b : To move to buffered file
+  C-x s : To save all buffered files
+
+
+* C-x Commands
+  C-x C-f : find file
+  C-x C-s : Save file
+  C-x s   : Save all file
+  C-x C-b : Show buffer
+  C-x b : Open buffer
+  C-x C-c : Quit
+  C-x 1  : Show one window
+  C-x u  : Undo
+
+
+* Repeat command
+  C-u (number) C-n : Do C-n (number) times
+  C-u 0 C-l: Move line contains curser to top
+  C-u 8 * : To display this => ********
+
+
+* Search and Replace
+  C-s : To search(incremental) in forword
+  C-r : In bakword direction
+  M-x repl s<TAB>changed<RET>aletered   : Replace string *after the curser*
+
+
+* Frame
+  M-x make-frame			      : To create new frame
+  M-x delete-frame		      : To delete that frame
+
+
+* Window, split
+  C-x 1 : To close all windows except window having curser
+  C-x 2 : To open new window at bottom(split screeen vertically)
+  C-x 3 : open window on right side(horizantal window)
+  C-M-v : To scroll bottom window
+  C-x o : To move to next window
+  C-x 1 : Only one window(removes all other window)
+  C-x 4 C-f : To open another file in new window
+
+
+* Stop command
+  c-g : To stop cammand
+
+
+* Help, other
+  C-h a/?
+  C-h c <Any command> : like C-h c C-p
+  C-h r  : help
+  C-z : To suspend emacs
+  C-h t : To open TUTORIAL
+
+  M-x recover-file <RET>                : To recover crashed file
+  M-x auto-fill	 		      :
+  C-x f (number) <RET>  : To set margin (default is 70)
+
+* Question
+  Get new line without breaking current line (C-e Ret) in one stroke
