@@ -72,7 +72,7 @@
 * Buffer List
   - d => Mark buffer to delete
   - u => Unmark buffer
-  - C-x o : Open file with cursor on other frame
+  - C-o : Open file with cursor on other frame
 
 
 * Undo
