@@ -1,4 +1,4 @@
-# Cheat sheet for Emacs user in .org
+# Quick Reference sheet for GNU Emacs
 # Maintain by Akshay Gaikwad
 
 * Keys on keyboard/ Emacs keys
@@ -108,8 +108,18 @@
 
 
 * Search and Replace
-  - C-s : To search(incremental) in forword
+  - C-s : To search(incremental) in forword; Press again to move to next matching word
   - C-r : In bakword direction
+  - C-s C-w : Search word
+  - C-s RET searchstring RET: Non increamental search
+  - C-M-s : Regex search
+** Query and replace
+  - M-x query-replace RET <word> RET <replace-word>
+    - ! to replace all at once
+    - SPC or y to replce at a time
+    - n to not replace and move to next
+    - q to quit
+    - . to replce current instance and exit
   - M-x repl s<TAB>changed<RET>aletered   : Replace string *after the curser*
 
 
