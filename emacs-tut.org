@@ -138,6 +138,31 @@
   - C-x 4 C-f : To open another file in new window
 
 
+* Shell mode
+  - M-! : Open shell in Emacs
+  - C-u M-! : Appears the output of shell command into bufer where cursor is
+  - M-p : Retrieve previous command in shell
+  - C-c C-o : Clear previous command output
+  - C-c C-r : Go to first line in the output of command
+  - C-c C-e : Return back to command prompt
+  - C-c C-c : Interrupt running command
+  - C-c C-z : Send the currently running job
+  - M-x ansi-term : Terminal
+  - M-x eshell : Emacs Lisp shell
+
+
+* Calendar
+  - M-x calendar : open calendar in Emcas
+  - C-f C-b : To move one day
+  - . : To return to current date
+  - C-p C-n : To move by week
+  - M-{ and M-} : Move by month
+  - C-x [ and C-x ] : To forward one year
+  - M-< : Move to beginning of year
+  - M-> : Move to end of year
+  - g d : Select year, month, date in Minibuffer to open that in calendar
+
+
 * Stop command
   - c-g : To stop cammand
 
