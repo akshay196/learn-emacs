@@ -163,6 +163,56 @@
   - g d : Select year, month, date in Minibuffer to open that in calendar
 
 
+* Dired Mode
+  - C-x d : Enter into dired mode
+  - q : Quit from dired mode
+  - p : previous
+  - n : next
+  - < : Previous dir
+  - > : Next directory
+  - ^ : Move to parent directory
+  - v : To view file
+  - o : Open file in another window
+  - + : Create new directory
+  - m : Mark subdirectory for later command
+  - u : unmark marked subdirectory
+  - t : invert mark selection
+  - * / : Mark all directories
+  - C-x u  : To undo changes
+  - * s : To mark all files(and directory)
+  - * % : mark files matching regular expression
+  - i : Insert another subdirectory listing
+  - C-u k : Remove subdirectory
+  - k : Remve maked from listing
+  - g : Re-read all directories
+  - $ : hide/unhide directories inserted in dired buffer
+  - M-$ : Hide/Unhide all directories in Dired buffer
+
+** Command on marked files
+  - C : copy file
+  - R : Rename file
+  - M : Modify mode of file (ex: 755)
+  - %u : Convert the filename to uppercase
+  - %l : Covert filename to lowerlcase
+  - D : Delete file
+  - Z : Compress and Uncompress files
+  - A : Search file using regexn
+  - Q : Query and replace
+  - ! : Run shell command on file (file on which cursor placed)
+  - & : Run shell command asynchronously
+  - d : Mark file for deletetion
+  - x : To execute deletion request
+  - ~ : Backup file if present (file which ends with ~)
+  - # : Flag auto-save file (file that starts and ends with #)
+  - % d : flag files for deletion based on redex
+  - % C : regex to copy marked file
+  - $ R : Rename marked files by regex
+
+  - M-x find-name-dired : Find files
+  - M-x find-grep-dired : Grep text on dired files
+  - M-x find-dired : Run find with args
+
+
 * Stop command
   - c-g : To stop cammand
 
