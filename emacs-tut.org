@@ -163,6 +163,33 @@
   - g d : Select year, month, date in Minibuffer to open that in calendar
 
 
+* Info
+  - M-x info : Enter into info directory/buffer
+  - n, p : To navigate pages
+  - Tab and Shft-tab to next previous menu item
+  - i : search
+  - u : come to top level directory
+  - t : go to top node
+  - l : go to last node visited
+  - g : Go to specific node
+  - s : Search for regex
+  - h : Build-in info tutorial
+
+
+* Macros in Emacs
+  - C-x ( : Start a macro
+  - C-x ) : Close macro
+** Macro to enter insert conter
+  - C-a C-x C-k C-i
+  - C-x C-k C-c : Define starting counter
+
+
+* Ediff in Emacs
+  - M-x ediff : Enter into Ediff (It ask for file one by one for diff)
+  - ? : Help in Ediff control panel
+  - E : Info for Ediff
+
+
 * Stop command
   - c-g : To stop cammand
 
