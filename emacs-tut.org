@@ -190,6 +190,53 @@
   - E : Info for Ediff
 
 
+* Calc
+  - C-x * q : Open quick calucation in minibuffer
+  - C-x * c : Open calc in Emacs
+  - U : Undo operation
+  - D : Redo operation
+  - C-x * 0 : Reset calc to initial state
+  - n : change sign of a number
+  - & : Reciprocal 1/x
+  - Q : Square root of number
+  - p : change precision
+  - { and } : To scroll calc buffer vertically
+  - d l : Toggle line number
+  - t d : Toggle train display
+  - d g : group digits with comma (100,000)
+  - m d : angle to be measured in degree
+  - m r : switch to radian mode
+  - h c : Help, describe a key briefly
+  - h k : Describe key fully
+  - h i : Calc info
+  - h s : Calc summary
+  - C-x * t : Calc tutorial
+
+** Some calc examples
+  - 2 RET 4 ^ : square of 4
+  - 16 RET 2 RET I ^  : Square root of 16
+  - 2 RET 10 B : 2 to base 10
+  - 90 S : sin(90)
+  - 0 C : cos(0)
+  - 45 T : tan(45)
+  - P : value of Pi
+  - 5 ! : compute factorial
+  - 5 RET 3 k c : combination 5C3
+  - 5 RET 3 H k c : Permutation 5P3
+  - 60 k f : prime factorization for a number
+  - 10 RET 5 k g : GCD of two numbers
+  - 10 RET 5 k l : LCM of two numbers
+  - d 2 : display binary
+  - d 0 : diaplay decimal
+  - b a : binary AND operation
+  - b o : OR operation
+  - b x : XOR operation
+  - b R : arithmetic right shift
+  - F : Floor of number
+  - I F : Ceiling of number
+  - v i : Create identity matrix
+
+
 * Stop command
   - c-g : To stop cammand
 
