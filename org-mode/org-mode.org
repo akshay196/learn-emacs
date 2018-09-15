@@ -1,0 +1,158 @@
+* Simple commands
+  - C-u C-u C-u TAB : See entire file including drawers
+  - C-c C-f : Go to next heading at same level
+  - C-c C-b : Go to previous heading at same level
+  - C-c C-u : Go backward to higher level
+  - M-RET : insert new item/hading at current level
+  - M-S-RET : Insert a TODO entry
+  - M-LEFT/RIGHT : To promote heading
+  - M-S-LEFT/RIGHT : To promote heading including its children
+  - M-S-UP/DOWN : Move item up and down
+  - C-c C-x c : Clone subtree
+  - C-c C-x C-w : Delete entire subtree
+  - C-c C-x M-w : Copy entire subtree
+  - C-c C-x C-y : Paste a subtree
+
+  - C-x n s : Narrow down subtree
+  - C-x n w : Widen subtree
+
+* Table
+  - C-c C-c : To re-align the table without moving  cursor
+  - TAB : Re-align the table and move to next field
+  - M-a : Move to beginning of field
+  - M-e : Move to end of field
+  - M-LEFT and M-RIGHT : Swap columns
+  - M-S-LEFT : Kill current column
+  - M-S-RIGHT : Insert new column
+  - M-UP/DOWN : Move current row up and down
+  - M-S-UP : Kill current row
+  - M-S-DOWN : insert new row above current line
+  - C-c - : Insert horizontal line below
+  - C-c RET : Insert horizontal line and move line below it
+  - C-c C-x C-w : cut the rectangular region
+  - C-c C-x M-w : copy the rectangular region
+  - C-c C-x C-y : Paste the rectangular region
+  - C-c + : Sum numnbers in a current column
+  - =$3+$4 : formula to sum column 3 and 4
+  - C-c = : To evaluate
+  - C-c ? : Show line, column and formula
+  - C-c } : Toggle grid display
+  - C-c { : Debug formula
+  - C-c ' : Edit formula in separate buffer
+  - C-c C-q : Abort formula editor
+  - C-c C-r : Toggle reference style in formula editor buffer
+
+* Links in org mode
+  - C-c C-l : Insert link / edit link
+  - C-u C-c C-l : insert link to a file
+  - C-c C-o : Open link
+  - C-c C-x C-n : Move to next link
+  - C-c C-x C-p : Move to previous link
+  - C-c C-x C-v : View linked image in Emacs
+
+* Code block in org mode
+  - (org-babel-do-load-languages 'org-babel-load-languages '((shell . t))) : Execute this using C-x C-e
+  - C-c C-c : Evaluate code block
+    Sample code block:
+    #+BEGIN_SRC sh
+    date
+    #+END_SRC
+  - C-c C-o : Open result of code block
+  - C-c C-v I : View information about the code block
+  - C-c C-v g : Go to named code block
+  - C-c C-v r : Go to named result
+  - C-c C-v u : Move to head of code
+  - C-c C-v n : Move to next code block
+  - C-c C-v p : Move to previous code block
+  - C-c C-v b : Execute all code blocks
+  - C-c C-v a : Compute SHA1 hash
+
+* State for heading
+  - C-c C-t : Rotate through states
+  - S-RIGHT : Move to next state
+  - S-LEFT : Move to previous state
+  - C-c , : Set priority for current item
+  - S-UP/DOWN : Raise/lower priority
+  - C-c C-c : Toggle checklist ( - [ ])
+
+* Tag
+  - C-c C-q : Add tag
+  - C-u C-c C-q : re-align tag (:office:)
+
+* Property and efforts
+  - C-c C-x q : Add property (like OWNER akshay196)
+  - C-c C-x e : Enter effforts
+
+  - C-c C-x C-c : Drawer entries in column view
+  - v : To view entry
+  - e : edit entry
+  - > : Make column wider
+  - < : Make column narrower
+  - M-LEFT : Move column
+  - q : Quit column view
+
+* date and timestamp
+  - C-c . : Insert date
+  - C-u C-c . : Insert date and time
+  - C-c ! : Insert inactive date [2018-09-15 Sat]
+  - C-c C-d : deadline timestamp
+  - C-c C-s : Schedule timestamp
+  - C-c C-y : Comute time between two timestamp
+  - S-UP : Change timestamp by +1 day when cursor at timestamp
+  - S-DOWN : Change timestamp by -1 day when cursor at timestamp
+  - C-c > : Open calendar with current date
+
+* Clock item
+  - C-c C-x C-i : Start clock
+  - C-c C-x C-o : Stop clock
+  - C-c C-x C-d : Display total subtree times
+  - C-c C-c : Removed displayed times
+  - C-c C-x C-r : Generate clock report and insert the table
+
+
+* Org agenda
+  - (global-set-key "\C-ca" 'org-agenda) C-c C-e : Assign org-agenda to C-a
+  - C-c [ : Add file to agenda list
+  - C-c ] : Remove file from agenda list
+  - C-c a a : Compile agenda for current week
+  - C-c a t : Compile global TODO list
+  - C-c a T : Compile TODO list for specific tag
+  - C-c a # : See stuck projects
+** Commands in agenda
+  - SPC : Show original location of the item
+  - TAB : GO to original location in another window
+  - C-c C-x b : Show subtree in indirect buffer
+  - o : Delete all the other window and just keep agenda view
+  - v : View mode dispatcher
+  - d : day view
+  - w : week view
+  - vm : monthly agenda view
+  - vy : Yearly agenda view
+  - E : Toggle entry text
+  - R : Clock report
+  - l : see the clocked entries and toggle display of these logbook entries
+  - g : Update agenda org
+  - f / b : Display next/previous week agenda
+  - . : Jump to today
+  - j : Goto specific date
+  - t : change state of current TODO
+  - : or T : Show tags
+  - e : Effort
+  - , : set priority
+  - > : Change timestamp for today
+  - I : start clock
+  - O : stop clock
+  - X : cancel clock
+  - m : mark entries in agenda
+  - u : unmark
+  - B : execute bulk action
+  - c : find the agenda cursor date in the built-in calendar
+  - M : Show phase of moon
+  - S : Ask sunrise and sunset time
+  - H : Holidays
+  - q : Quit org mode agenda
+  - C-c C-e : Export agenda
+
+
+M-x org-info : Read manual
+
