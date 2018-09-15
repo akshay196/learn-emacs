@@ -252,3 +252,16 @@
   - M-x recover-file <RET>                : To recover crashed file
   - M-x auto-fill	 		      :
   - C-x f (number) <RET>  : To set margin (default is 70)
+
+
+* Some topics
+  - M-x set-justification-center : align text to center
+  - M-x center-region : Center selected region
+  - C-x r k : Delete rectangle selected region and store
+  - C-x r y : Restore deleted rectangle
+  - C-x r o : insert blank rectangular region
+  - C-x r t : Insert/Replace entries with a string (M-x string-insert-rectangle)
+  - C-x r c : Blank out area marked as a rectangle
+
+* Modes in Emacs
+  - M-x auto-fill-mode : Wrap line to 80 char limit
