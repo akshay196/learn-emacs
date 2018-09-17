@@ -1,0 +1,8 @@
+# https://github.com/proofit404/anaconda-mode
+
+* Simple commands
+  - C-M-i : Auto complete
+  - M-. : find definitions
+  - C-x 4 . : find definition in other window
+  - M-r : find references
+  - M-? : show doc
